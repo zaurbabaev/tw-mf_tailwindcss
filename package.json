@@ -4,15 +4,13 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-   "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-   "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "prebuild": "chmod +x ./node_modules/.bin/tailwindcss",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.17"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.22",
