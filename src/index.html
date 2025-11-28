@@ -55,7 +55,7 @@
       <header>
         <button
           id="dark-mode-toggle"
-          class="fixed right-0 z-10 inline-block w-12 p-2 text-3xl rounded-l-lg cursor-pointer top-24 bg-zinc-900 dark:bg-zinc-200 dark:text-zinc-900">
+          class="fixed top-24 right-0 z-10 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 p-2 text-3xl dark:bg-zinc-200 dark:text-zinc-900">
           <span class="dark:hidden">
             <i class="fa-solid fa-sun"></i>
           </span>
@@ -68,31 +68,31 @@
             <img src="assets/images/logo-inverted.png" width="50" />
             <div class="text-2xl font-bold">tw:<span class="text-sky-900">mf</span></div>
           </div>
-          <div class="block pr-4 my-auto ml-auto cursor-pointer md:hidden">
+          <div class="my-auto ml-auto block cursor-pointer pr-4 md:hidden">
             <button id="mobile-menu-button" class="group peer">
               <div
-                class="relative top-0 w-8 h-1 transition-all rounded-full bg-zinc-200 group-open:top-2 group-open:rotate-45"></div>
+                class="relative top-0 h-1 w-8 rounded-full bg-zinc-200 transition-all group-open:top-2 group-open:rotate-45"></div>
               <div
-                class="w-8 h-1 mt-1 transition-all rounded-full opacity-100 bg-zinc-200 group-open:opacity-0"></div>
+                class="mt-1 h-1 w-8 rounded-full bg-zinc-200 opacity-100 transition-all group-open:opacity-0"></div>
               <div
-                class="relative top-0 w-8 h-1 mt-1 transition-all rounded-full bg-zinc-200 group-open:-top-2 group-open:-rotate-45"></div>
+                class="relative top-0 mt-1 h-1 w-8 rounded-full bg-zinc-200 transition-all group-open:-top-2 group-open:-rotate-45"></div>
             </button>
 
             <div
               class="absolute top-[62px] left-0 hidden w-full bg-linear-to-r from-rose-500 to-pink-500 peer-open:block">
               <div
-                class="flex items-center justify-center h-full p-4 font-bold text-pink-200 transition-colors cursor-pointer realtive hover:bg-white/10 hover:text-zinc-200">
+                class="realtive flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200">
                 <span>Home</span>
               </div>
               <div
-                class="flex items-center justify-center h-full p-4 font-bold text-pink-200 transition-colors cursor-pointer realtive hover:bg-white/10 hover:text-zinc-200">
+                class="realtive flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200">
                 <span>Lineup</span>
               </div>
 
               <div
                 id="ticket-menu-item"
-                class="h-full text-pink-200 transition-colors cursor-pointer group realtive hover:bg-white/10 hover:text-zinc-200">
-                <div class="p-4 font-bold text-center">Tickets</div>
+                class="group realtive h-full cursor-pointer text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200">
+                <div class="p-4 text-center font-bold">Tickets</div>
                 <div class="hidden group-open:block">
                   <div
                     class="relative p-4 text-center text-pink-200 transition-colors ease-in-out hover:bg-white/10 hover:text-zinc-200">
@@ -106,13 +106,13 @@
               </div>
 
               <div
-                class="flex items-center justify-center h-full p-4 font-bold text-pink-200 transition-colors cursor-pointer realtive hover:bg-white/10 hover:text-zinc-200">
+                class="realtive flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200">
                 <span>Support</span>
               </div>
             </div>
           </div>
 
-          <div class="items-center justify-end flex-1 hidden md:flex">
+          <div class="hidden flex-1 items-center justify-end md:flex">
             <div class="menu-item">
               <span>Home</span>
             </div>
@@ -122,13 +122,13 @@
             <div class="menu-item group">
               <span>Tickets</span>
               <div
-                class="absolute right-0 hidden text-right bg-pink-500 top-full rounded-b-md whitespace-nowrap group-hover:block">
+                class="absolute top-full right-0 hidden rounded-b-md bg-pink-500 text-right whitespace-nowrap group-hover:block">
                 <div
-                  class="p-4 font-bold text-pink-200 transition-colors ease-in-out cursor-pointer hover:bg-white/5 hover:text-zinc-200">
+                  class="cursor-pointer p-4 font-bold text-pink-200 transition-colors ease-in-out hover:bg-white/5 hover:text-zinc-200">
                   <span>Single day ticket</span>
                 </div>
                 <div
-                  class="p-4 font-bold text-pink-200 transition-colors ease-in-out cursor-pointer hover:bg-white/5 hover:text-zinc-200">
+                  class="cursor-pointer p-4 font-bold text-pink-200 transition-colors ease-in-out hover:bg-white/5 hover:text-zinc-200">
                   <span>7 day ticket</span>
                 </div>
               </div>
@@ -143,44 +143,43 @@
       <main>
         <div
           class="flex h-[calc(100vh-200px)] min-h-[400px] flex-col items-center justify-center bg-[url('/src/assets/images/hero.jpg')] bg-cover bg-fixed bg-center">
-          <div class="px-4 py-2 text-center rounded-xl bg-white/30 backdrop-blur-md">
+          <div class="rounded-xl bg-white/30 px-4 py-2 text-center backdrop-blur-md">
             <div class="relative">
               <img src="./assets/images/logo.png" width="175" />
               <div class="mt-[-70px] mb-5 flex items-center justify-center">
                 <div
-                  class="flex items-center justify-center gap-1 bg-pink-500 rounded-full h-14 w-14">
-                  <div class="w-1 h-2 bg-pink-300 rounded-full animate-wavey"></div>
+                  class="flex h-14 w-14 items-center justify-center gap-1 rounded-full bg-pink-500">
+                  <div class="animate-wavey h-2 w-1 rounded-full bg-pink-300"></div>
                   <div
-                    class="w-1 h-3 bg-pink-200 rounded-full animate-wavey animation-delay-200"></div>
+                    class="animate-wavey animation-delay-md h-3 w-1 rounded-full bg-pink-200"></div>
                   <div
-                    class="animate-wavey animation-delay-[150ms] h-4 w-1 rounded-full bg-pink-100"></div>
+                    class="animate-wavey animation-delay-150 h-4 w-1 rounded-full bg-pink-100"></div>
                   <div
-                    class="w-1 h-3 bg-pink-200 rounded-full animate-wavey animation-delay-300"></div>
+                    class="animate-wavey animation-delay-300 h-3 w-1 rounded-full bg-pink-200"></div>
                   <div
-                    class="animate-wavey animation-delay-[75ms] h-2 w-1 rounded-full bg-pink-300"></div>
+                    class="animate-wavey animation-delay-75 h-2 w-1 rounded-full bg-pink-300"></div>
                 </div>
               </div>
             </div>
             <div class="text-5xl font-bold">tw:<span class="text-sky-900">mf</span></div>
           </div>
           <div class="mt-3 text-sm font-bold">Keep me updated with news and promotions</div>
-          <form class="flex gap-2 mt-3">
+          <form class="mt-3 flex gap-2">
             <input
               type="email"
               placeholder="Email"
-              class="p-2 font-bold border rounded-sm border-white/40 bg-white/30 text-sky-900 placeholder-zinc-500 caret-pink-500 outline-pink-500 backdrop-blur-md focus:outline" />
+              class="rounded-sm border border-white/40 bg-white/30 p-2 font-bold text-sky-900 placeholder-zinc-500 caret-pink-500 outline-pink-500 backdrop-blur-md focus:outline" />
             <button
               type="submit"
-              class="px-4 py-2 font-bold transition-colors bg-pink-500 rounded-sm cursor-pointer hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20">
+              class="cursor-pointer rounded-sm bg-pink-500 px-4 py-2 font-bold transition-colors hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20">
               Subcribe
             </button>
           </form>
         </div>
 
-        <div class="max-w-5xl mx-auto mt-20 text-zinc-900 dark:text-zinc-200">
+        <div class="container mx-auto mt-20 text-zinc-900 dark:text-zinc-200">
           <h2>
-            <span
-              class="text-transparent bg-linear-to-r from-cyan-500 to-pink-500 bg-clip-text"
+            <span class="bg-linear-to-r from-cyan-500 to-pink-500 bg-clip-text text-transparent"
               >Headliners</span
             >
           </h2>
@@ -191,12 +190,12 @@
           <div class="flex">
             <div
               id="previous"
-              class="relative flex items-center justify-center p-2 text-5xl cursor-pointer -top-8">
+              class="relative -top-8 flex cursor-pointer items-center justify-center p-2 text-5xl">
               <i class="fas fa-angle-left"></i>
             </div>
             <div
               id="carousel"
-              class="flex flex-1 w-full gap-4 pb-4 mt-4 overflow-x-auto snap-x scroll-smooth">
+              class="mt-4 flex w-full flex-1 snap-x gap-4 overflow-x-auto scroll-smooth pb-4">
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   class="h-80 w-full snap-center rounded-xl bg-[url('/src/assets/images/band1.jpg')] bg-cover bg-center shadow-md shadow-black/20"></div>
@@ -242,27 +241,27 @@
             </div>
             <div
               id="next"
-              class="relative flex items-center justify-center p-2 text-5xl cursor-pointer -top-8">
+              class="relative -top-8 flex cursor-pointer items-center justify-center p-2 text-5xl">
               <i class="fas fa-angle-right"></i>
             </div>
           </div>
           <h2 class="mt-20">Lineup</h2>
           <p>Follow the timetable and stage to ensure you don't miss your favorite artists</p>
-          <div class="relative px-2 py-4 mt-5 rounded-lg bg-zinc-800 text-zinc-200">
+          <div class="relative mt-5 rounded-lg bg-zinc-800 px-2 py-4 text-zinc-200">
             <div
-              class="absolute top-0 w-4 h-full -ml-2 rounded-full via-cyn-500 left-1/2 bg-linear-to-b from-sky-900 to-teal-900">
+              class="via-cyn-500 absolute top-0 left-1/2 -ml-2 h-full w-4 rounded-full bg-linear-to-b from-sky-900 to-teal-900">
               <div class="sticky top-1/2">
                 <div class="relative size-4">
                   <div
-                    class="absolute bg-pink-500 rounded-full opacity-75 size-4 animate-ping"></div>
-                  <div class="relative rounded-full size-4 bg-rose-500"></div>
+                    class="absolute size-4 animate-ping rounded-full bg-pink-500 opacity-75"></div>
+                  <div class="relative size-4 rounded-full bg-rose-500"></div>
                 </div>
               </div>
             </div>
 
             <div class="grid grid-cols-2 gap-8">
               <div>
-                <h4 class="p-2 my-4 rounded-lg bg-zinc-900">1st July</h4>
+                <h4 class="my-4 rounded-lg bg-zinc-900 p-2">1st July</h4>
               </div>
               <div></div>
               <div class="text-right">
@@ -276,7 +275,7 @@
                 <div class="text-zinc-400">6pm - Sage Sage</div>
               </div>
               <div>
-                <h4 class="p-2 my-4 rounded-lg bg-zinc-900">1st July</h4>
+                <h4 class="my-4 rounded-lg bg-zinc-900 p-2">1st July</h4>
               </div>
               <div></div>
               <div class="text-right">
@@ -290,7 +289,7 @@
                 <div class="text-zinc-400">6pm - Sage Sage</div>
               </div>
               <div>
-                <h4 class="p-2 my-4 rounded-lg bg-zinc-900">1st July</h4>
+                <h4 class="my-4 rounded-lg bg-zinc-900 p-2">1st July</h4>
               </div>
               <div></div>
               <div class="text-right">
@@ -305,26 +304,40 @@
               </div>
             </div>
           </div>
-          <h2 class="mt-20">Tickets</h2>
-          <table class="table w-full mt-5 border border-collapse border-zinc-500">
-            <thead class="text-lg font-bold">
-              <th class="p-3 border border-zinc-500">Tickets</th>
-              <th class="p-3 border border-zinc-500">Price</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="px-3 py-2 border border-zinc-500">Single day ticket</td>
-                <td class="px-3 py-2 border border-zinc-500">£30</td>
-              </tr>
-              <tr>
-                <td class="px-3 py-2 border border-zinc-500">7 Day Ticket</td>
-                <td class="px-3 py-2 border border-zinc-500">£100</td>
-              </tr>
-            </tbody>
-            <caption class="caption-bottom">
-              Once they're gone, they're gone!
-            </caption>
-          </table>
+          <div class="@container">
+            <h2 class="mt-20">Tickets</h2>
+            <table class="mt-5 table w-full border-collapse border border-zinc-500">
+              <thead class="text-lg font-bold">
+                <th class="border border-zinc-500 p-3">Tickets</th>
+                <th class="border border-zinc-500 p-3">Price</th>
+                <th class="w-[150px]"></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-zinc-500 px-3 py-2">Single day ticket</td>
+                  <td class="border border-zinc-500 px-3 py-2">£30</td>
+                  <td class="border border-zinc-500 px-3 py-2">
+                    <!-- @max-xl:hidden-->
+                    <button class="cursor-pointer rounded-md bg-pink-600 p-2 text-white">
+                      Buy Now
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border border-zinc-500 px-3 py-2">7 Day Ticket</td>
+                  <td class="border border-zinc-500 px-3 py-2">£100</td>
+                  <td class="border border-zinc-500 px-3 py-2">
+                    <button class="cursor-pointer rounded-md bg-pink-600 p-2 text-white">
+                      Buy Now
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+              <caption class="mb-20 caption-bottom">
+                Once they're gone, they're gone!
+              </caption>
+            </table>
+          </div>
         </div>
       </main>
     </div>
