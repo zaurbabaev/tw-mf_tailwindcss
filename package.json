@@ -1,22 +1,20 @@
 {
-  "name": "tailwind-course",
+  "name": "tailwind-course-starter",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
   "author": "",
-  "type": "module",
-  "main": "index.js",
- "scripts": {
-  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-  "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
-
+  "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.22",
-    "postcss": "^8.5.6",
-    "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.7.1",
-    "tailwindcss": "^4.1.17"
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.4.18"
+  },
+  "dependencies": {
+    "@check-light-or-dark/color": "^1.0.3"
   }
 }
